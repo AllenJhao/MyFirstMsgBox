@@ -1,0 +1,27 @@
+ #show-box>div{
+                margin: 0px auto;
+                max-height: 120mm;
+                max-width: 70mm;
+                border-radius: 5mm;
+                background-color: #666666;
+              }
+            
+            h3{
+               margin: 0px auto;
+              }
+         
+         .num {
+                display: none;
+              }  
+   
+   .msg-clone {
+                display: none;
+              }
+
+    .msg-clear{
+                display: none;
+              }
+ 
+ .msg-display:hover > .msg-clear{
+                display: inline;
+              }

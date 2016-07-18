@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel=stylesheet  type="text/css" href="Mg_box.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="Mg_Box.js"></script>
+        
+    </head>
+    <body>
+        <h3>LEAVE YOUR MASSAGE</h3>
+        
+        <div class ="inputText">
+            <form name = "imformationInput">
+                <select name ="selectWho" id="selectWho">
+                    <option value="路人">路人</option>
+                    <option value="好人">好人</option>
+                    <option value="壞人">壞人</option>
+                    <option value="仇人">仇人</option>
+                </select> 
+                留言主旨：<input type = "text"  id ="massageTitle"></input>
+                留言內容：<textarea id = "massageLeave"></textarea> 
+                <input id ="TextSub"   type = "button" value ="送出"></input>
+                <input id ="TextClear" type = "button" value ="清除"></input>
+            </form>
+           
+            <form id= "chose_select_display">
+                <input  type="radio" name="sel-all" value="ALL" checked>ALL
+                <input  type="radio" name="sel-all" value="路人">路人
+                <input  type="radio" name="sel-all" value="好人">好人
+                <input  type="radio" name="sel-all" value="壞人">壞人
+                <input  type="radio" name="sel-all" value="仇人">仇人  
+            </form>
+        </div>
+        
+        <div id = "show-box">
+            <div class="msg-clone">
+            <span class="msgti-content"></span><span class="msg-clear">X</span><br />
+            <span class="msgsl-content"></span><br />
+            <span class="msgmg-content"></span><span class="num"></span>   
+            </div>
+        </div>
+    </body>
+</html>
